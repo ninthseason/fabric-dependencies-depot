@@ -1,4 +1,4 @@
-# 1. GET https://api.modrinth.com/v2/search?facets=[["categories:fabric"]]&offset={offset}&limit=100
+# 1. GET https://api.modrinth.com/v2/search?facets=[["categories:fabric"],["project_type:mod"]]&offset={offset}&limit=100
 # 2. GET https://api.modrinth.com/v2/project/{pid}/version
 
 import asyncio
@@ -102,7 +102,7 @@ async def build_spmap():
 async def get_projects_number_and_ratelimit():
     async with aiohttp.ClientSession() as session:
         async with session.get(
-            f'https://api.modrinth.com/v2/search?facets=[["categories:fabric"]]&limit=1'
+            f'https://api.modrinth.com/v2/search?facets=[["categories:fabric"],["project_type:mod"]]&limit=1'
         ) as response:
             data = await response.json()
             return data["total_hits"], int(response.headers["x-ratelimit-remaining"])
