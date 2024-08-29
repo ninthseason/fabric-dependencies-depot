@@ -1,0 +1,1 @@
+[{"game_versions": ["1.21", "1.21.1"], "version_number": "0.0.7", "dependencies": []}, {"game_versions": ["1.21-pre4", "1.21-rc1", "1.21"], "version_number": "0.0.6", "dependencies": []}, {"game_versions": ["1.21-pre3", "1.21-pre4"], "version_number": "0.0.5", "dependencies": []}]

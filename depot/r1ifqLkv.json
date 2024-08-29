@@ -1,0 +1,1 @@
+[{"game_versions": ["1.18"], "version_number": "cbc-1.1.4-1.18", "dependencies": []}, {"game_versions": ["21w19a", "21w20a", "1.17-pre1", "1.17-pre2", "1.17-pre3", "1.17-pre4", "1.17-pre5", "1.17-rc1", "1.17-rc2", "1.17"], "version_number": "cbc-1.1.3-1.17", "dependencies": []}, {"game_versions": ["1.16.5"], "version_number": "1.0", "dependencies": []}]

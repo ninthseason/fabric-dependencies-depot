@@ -1,0 +1,20 @@
+on:
+  schedule:
+    - cron: '25 6,18 * * *'  # every day at 6:25 and 18:25(UTC)
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: checkout repository🔎
+        uses: actions/checkout@v4
+      - name: install python packages🐍
+        run: |
+          pip install -r requirements.txt
+      - name: run main.py🚀
+        run: |
+          python main.py
+      - name: commit and push changes🔃
+        uses: EndBug/add-and-commit@v9
