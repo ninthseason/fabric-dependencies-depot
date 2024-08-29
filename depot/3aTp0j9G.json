@@ -1,0 +1,1 @@
+[{"game_versions": ["1.19.3"], "version_number": "1.0.0+1.19.3+fabric", "dependencies": []}, {"game_versions": ["1.19"], "version_number": "1.0.0+1.19+fabric", "dependencies": []}, {"game_versions": ["1.18", "1.18.1", "1.18.2"], "version_number": "1.0.0+1.18.x+fabric", "dependencies": []}]
