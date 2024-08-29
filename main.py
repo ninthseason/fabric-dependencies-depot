@@ -87,12 +87,13 @@ async def build_spmap():
         ratelimit -= 1
     tasks_list.append(part_tasks)
     # start fetch data
-    for i in tasks_list:
+    for i in tasks_list[:-1]:
         for result in await asyncio.gather(*i):
             sp_map.update(result)
-        if len(sp_map) != total_number:
-            print("current map length:", len(sp_map), "sleep 60s")
-            await asyncio.sleep(60)
+        print("current map length:", len(sp_map), "sleep 60s")
+        await asyncio.sleep(60)
+    for result in await asyncio.gather(*tasks_list[-1]):
+        sp_map.update(result)
     # save map to file
     with open("depot/map.json", "w") as f:
         json.dump(sp_map, f)

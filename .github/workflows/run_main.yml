@@ -11,7 +11,11 @@ jobs:
     steps:
       - name: checkout repository🔎
         uses: actions/checkout@v4
-      - name: install python packages🐍
+      - name: setup python🐍
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12' 
+      - name: install python packages📦
         run: |
           pip install -r requirements.txt
       - name: run main.py🚀
