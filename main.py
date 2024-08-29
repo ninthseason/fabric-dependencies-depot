@@ -48,14 +48,17 @@ async def fetch_dependencies(pid):
             async with session.get(f"https://api.modrinth.com/v2/project/{pid}/version") as response:
                 data = await response.json()
                 dependencies = []
-                for version in data:
-                    if "fabric" in version["loaders"]:
-                        dep_format = {}
-                        dep_format["game_versions"] = version["game_versions"]
-                        dep_format["version_number"] = version["version_number"]
-                        dep_format["dependencies"] = [d["project_id"] for d in version["dependencies"]]
-                        dependencies.append(dep_format)
-                result[pid] = dependencies
+                try:
+                    for version in data:
+                        if "fabric" in version["loaders"]:
+                            dep_format = {}
+                            dep_format["game_versions"] = version["game_versions"]
+                            dep_format["version_number"] = version["version_number"]
+                            dep_format["dependencies"] = [d["project_id"] for d in version["dependencies"]]
+                            dependencies.append(dep_format)
+                    result[pid] = dependencies
+                except TypeError as e:
+                    print(f"triggered {e}:\n{data}")
         except aiohttp.client_exceptions.ContentTypeError as _:  # if project be deleted or hidden
             print(f"{pid} dispaired.")
     return result
