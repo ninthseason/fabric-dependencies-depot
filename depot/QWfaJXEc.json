@@ -1,1 +1,1 @@
-[{"game_versions": ["1.20.1"], "version_number": "1.20.1-1.1.0-fabric+mod", "dependencies": ["7vxePowz", "HXF82T3G"]}, {"game_versions": ["1.21", "1.21.1"], "version_number": "1.21-2.0.0-fabric+mod", "dependencies": ["7vxePowz", "HXF82T3G"]}]
+[{"game_versions": ["1.20.1"], "version_number": "1.20.1-1.1.0-fabric+mod", "dependencies": ["HXF82T3G", "7vxePowz"]}, {"game_versions": ["1.21", "1.21.1"], "version_number": "1.21-2.0.0-fabric+mod", "dependencies": ["7vxePowz", "HXF82T3G"]}]
