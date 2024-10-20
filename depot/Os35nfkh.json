@@ -1,1 +1,1 @@
-[{"game_versions": ["1.21"], "version_number": "1.0.1+1.21+plasmovoice", "dependencies": ["mOgUt4GM", "1bZhdhsH"]}, {"game_versions": ["1.21"], "version_number": "1.0.0", "dependencies": ["mOgUt4GM", "1bZhdhsH"]}]
+[{"game_versions": ["1.21"], "version_number": "1.0.1+1.21+plasmovoice", "dependencies": ["1bZhdhsH", "mOgUt4GM"]}, {"game_versions": ["1.21"], "version_number": "1.0.0", "dependencies": ["1bZhdhsH", "mOgUt4GM"]}]
