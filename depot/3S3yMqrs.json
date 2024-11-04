@@ -1,1 +1,1 @@
-[{"game_versions": ["1.20.1"], "version_number": "1.20.1-fabric-1.0", "dependencies": ["Dg7PHdkJ", "P7dR8mSH"]}, {"game_versions": ["1.19.2"], "version_number": "1.19.2-fabric-1.0", "dependencies": ["Dg7PHdkJ", "P7dR8mSH"]}]
+[{"game_versions": ["1.20.1"], "version_number": "1.20.1-fabric-1.0", "dependencies": ["Dg7PHdkJ", "P7dR8mSH"]}, {"game_versions": ["1.19.2"], "version_number": "1.19.2-fabric-1.0", "dependencies": ["P7dR8mSH", "Dg7PHdkJ"]}]
