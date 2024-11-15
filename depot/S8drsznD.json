@@ -1,1 +1,1 @@
-[{"game_versions": ["1.21", "1.21.1"], "version_number": "1.0.0+1.21-beta.1", "dependencies": ["9s6osm5g", "P7dR8mSH", "aC3cM3Vq", "mOgUt4GM"]}, {"game_versions": ["1.21", "1.21.1"], "version_number": "1.0.0+1.21-alpha.1a", "dependencies": ["P7dR8mSH", "aC3cM3Vq"]}]
+[{"game_versions": ["1.21", "1.21.1"], "version_number": "1.0.0+1.21-beta.1", "dependencies": ["9s6osm5g", "P7dR8mSH", "aC3cM3Vq", "mOgUt4GM"]}, {"game_versions": ["1.21", "1.21.1"], "version_number": "1.0.0+1.21-alpha.1a", "dependencies": ["aC3cM3Vq", "P7dR8mSH"]}]
